@@ -4,7 +4,15 @@ namespace Tvswe\Neo4j\Entity;
 
 use GraphAware\Common\Type\Node;
 
-interface Neo4jNodeEntityInterface
+/**
+ * Interface Neo4jNodeEntityInterface
+ * @package Tvswe\Neo4j\Entity
+ */
+interface Neo4jNodeEntityInterface extends Neo4jEntityInterface
 {
+    /**
+     * @param Node $node
+     * @return Neo4jNodeEntityInterface
+     */
     public static function createByNode(Node $node);
 }
