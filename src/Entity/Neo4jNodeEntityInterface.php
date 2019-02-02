@@ -14,5 +14,10 @@ interface Neo4jNodeEntityInterface extends Neo4jEntityInterface
      * @param Node $node
      * @return Neo4jNodeEntityInterface
      */
-    public static function createByNode(Node $node);
+    public static function createByNode(Node $node): Neo4jNodeEntityInterface;
+
+    /**
+     * @return string[]
+     */
+    public static function getLabels(): array;
 }

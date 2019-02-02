@@ -3,15 +3,15 @@
 namespace Tvswe\Neo4j\Entity;
 
 /**
- * Interface Neo4jEntityInterface
+ * Interface Neo4jNodeEntityInterface
  * @package Tvswe\Neo4j\Entity
  */
 interface Neo4jEntityInterface
 {
     /**
-     * @return string[]
+     * @return int|null
      */
-    public static function getLabels(): array;
+    public function getId(): ?int;
 
     /**
      * @return array
